@@ -1,4 +1,4 @@
-import streamlit as st
+limport streamlit as st
 from langchain_helper import get_answer_from_ai
 
 st.set_page_config(page_title="AI Job Interview Prep", page_icon="🤖")
@@ -9,7 +9,7 @@ st.subheader("Ask any interview question. Get a smart answer instantly!")
 question = st.text_area("Enter your interview question here:", height=150)
 
 if st.button("Get AI Answer"):
-    if question.strip() == "":
+    if question.strip() == "": 
         st.warning("Please enter a question first.")
     else:
         with st.spinner("Thinking..."):
